@@ -61,7 +61,7 @@ $str
 
 
 #Setup credentials
-cd C:\Users\z5nev\Documents\PowerShell
+Set-Location C:\Users\z5nev\Documents\PowerShell
 $import_user_pw_secure = @(Import-Csv .\user_pw_secure.txt)
 $User64 = $import_user_pw_secure.ID1
 $User = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String($User64))
